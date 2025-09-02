@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heather Ricarte-Contact</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="short icon" href="/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+    
+<body>
+    <header class="page-header">
+        <div class="logo-heading">
+            <img src="images/HR-logo.svg" class="logo" alt="portfolio-logo">
+            <h1 class="heading">Heather Ricarte</h1>
+        </div>
+        <nav class="navigation">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list_item navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+    <h2>Let's Connect! 👋🏼</h2>
+        <div class="contact-container">
+            <div id="personal" class="contact-container">
+                <p><span style="font-weight:500;">Hometown: </span>Seattle, WA</p>
+                <p><span style="font-weight:500;">Mobile: </span><a href="tel:1-206-605-7443">1-206-605-7443</a></p>
+                <p><span style="font-weight:500;">Email: </span><a href="mailto:ricarte.heather@gmail.com">ricarte.heather@gmail.com</a></p>
+            </div>
+            <div id="form" class="contact-container">
+                <form method="post" id="contact-form">
+                    <label for="contact-fname" class="standard-label">* First name: </label>
+                    <input type="text" id="contact-fname" name="fname" size="20" required autofocus>
+
+                    <label for="contact-lname" class="standard-label">* Last name: </label>
+                    <input type="text" id="contact-lname" name="lname" size="20" required>
+
+                    <label for="contact-email" class="standard-label">* Email: </label>
+                    <input type="email" id="contact-email" name="email" size="30" required>
+
+                    <label for="contact-tel" class="standard-label">Telephone <span style="font-size:16px;">(Format: 123-456-7890)</span></label> 
+                    <input type="tel" id="contact-tel" name="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" size=14 maxlength="12">
+
+                    <label for="contact-message" class="standard-label">* Message <span style="font-size:16px;">(240 characters maximum)</span></label>
+                    <textarea id="contact-message" name="message" maxlength="240" required></textarea>
+                    
+                    <button type="submit" class="button">Send message</button>
+                    <button type="reset" class="button1">Reset</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+<footer class="page-footer">
+    <h3 class="page-footer">Find me on</h3>
+        <div class="social-media">
+            <img src="images/github-logo.svg" width="42" height="42" alt="Github">
+            <img src="images/linkedin-logo.svg" width="42" height="42" alt="Linkedin">
+            <img src="images/insta-logo.svg" width="42" height="42" alt="Instagram">
+            <img src="images/fb-logo.svg" width="42" height="42" alt="Facebook">
+        </div>
+</footer>
+
+    <script src="js/tota11y.min.js"></script>
+</body>
+
+</html>
