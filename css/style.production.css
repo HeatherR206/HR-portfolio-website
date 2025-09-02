@@ -5,6 +5,17 @@
 * Browsers: last 2 version
 */
 
+
+/* Colors used
+
+Text color (dk purple): #251D29   
+Background color (wisteria): #FBEBFF
+Primary color (dark purple): #7B52F4
+Secondary color (dark purple): #c4b2fa
+Accent color - hover & focus, header border (orange): #d85946
+Logo background color (purple): #c4b2fa
+grid background (lt purple): #dac6fb
+Logo "H" color (dark grey): #232124 */
 * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -326,9 +337,9 @@ div#intro h2 {
 .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1em;
+    -ms-grid-columns: 1fr 2em 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
     margin: 0;
 }
 
@@ -340,7 +351,7 @@ div#intro h2 {
 .grid__item {
     background-color: #c4b2fa;
     display: inline-block;
-    width: 33%;
+    width: 48%;
     padding: 1em;
     margin: 0;
     text-align: left;
@@ -351,8 +362,8 @@ div#intro h2 {
     .grid {
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 1fr 1em 1fr 1em 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-columns: 1fr 1em 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 1em;
         margin: 0;
     }
@@ -470,7 +481,7 @@ textarea:focus {
         -ms-flex-direction: column;   
             flex-direction: column;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
     margin-top: 2em;
 }
