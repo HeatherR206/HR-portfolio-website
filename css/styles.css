@@ -264,8 +264,8 @@ div#intro h2 {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: var(--paddingmargin-default);
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--paddingmargin-thick);
     margin: 0;
 }
 
@@ -277,7 +277,7 @@ div#intro h2 {
 .grid__item {
     background-color: var(--secondary-color);
     display: inline-block;
-    width: 33%;
+    width: 48%;
     padding: var(--paddingmargin-default);
     margin: 0;
     text-align: left;
@@ -287,7 +287,7 @@ div#intro h2 {
 @supports (display: grid) {
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: var(--paddingmargin-default);
         margin: 0;
     }
@@ -379,7 +379,7 @@ textarea:focus {
     display: flex;   
     flex-direction: column;
     font-size: var(--font-size-default);
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
     text-align: center;
     margin-top: var(--paddingmargin-thick);
 }
