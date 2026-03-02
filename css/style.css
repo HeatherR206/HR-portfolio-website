@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 :root {
     --background-color: #FBEBFF;
     --primary-color: #7b52f4;
@@ -25,10 +29,11 @@
     --font-weight-default: 400;
     --font-weight-semibold: 500;
     --font-weight-bold: 600;
-    --paddingmargin-default: 1em;
-    --paddingmargin-thin: 0.5em;
-    --paddingmargin-thick: 2em;
+    --padding-default: 1em;
+    --padding-thin: 0.5em;
+    --padding-thick: 2em;
 }
+
 * {
     box-sizing: border-box;
 }
@@ -44,7 +49,7 @@ body {
 }
 
 main {
-    margin: var(--paddingmargin-thick);
+    margin: var(--padding-thick);
 }
 
 section {
@@ -96,9 +101,17 @@ a:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--paddingmargin-default);
-    border-bottom: 3px solid var(--accent-orange);
+    padding: var(--padding-default);
+    border-bottom: 5px solid var(--accent-orange);
     font-family: "Montserrat Alternates", sans-serif;
+    min-height: 90px;
+}
+
+.logo {
+    display: flex;
+    width: 70px;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .logo-heading {
@@ -108,8 +121,10 @@ a:focus {
     flex-shrink: 0;
 }
 
-.heading {   
-    font-size: clamp(1.5em, 3.5vw, 2.6em);
+.heading {
+    flex-shrink: 0;
+    font-size: 2.2rem;
+    margin: 0;
     line-height: 1;
 }
 
@@ -119,6 +134,13 @@ a:focus {
     align-items: center;
     margin: 0;
     padding: 0;
+    gap: 15px;
+}
+
+.navigation-list__item {
+    text-decoration: none;
+    color: var(--font-default);
+    padding: 5px 10px;
 }
 
 .navigation a {
@@ -136,7 +158,7 @@ a:focus {
     display: flex;   
     flex-direction: column;
     text-align: center;
-    margin-top: var(--paddingmargin-thick);
+    margin-top: var(--padding-thick);
     font-weight: var(--font-weight-semibold);
 }
 
@@ -152,7 +174,7 @@ button,
     width: 14em;
     padding: var(--padding-thin);
     margin: 2em 6px 0;
-    border-radius: 50%;
+    border-radius: 50px;
     cursor: pointer;
     transition: all 0.4s ease;
     text-align: center;
@@ -177,25 +199,37 @@ button:focus,
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: var(--padding-thick);
+    grid-gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto; 
+    width: 100%;
 }
 
 .grid__item {
-    background-color: var(--secondary-color);
-    padding: var(--padding-default);
+    background-color: var(--secondary-color-lighter);
+    padding: var(--padding-thick);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .profile-container, .about-container {
     max-width: 750px;
     margin: 2em auto;
-    padding: var(--paddingmargin-default);
+    padding: var(--padding-default);
 }
 
 .profile-container img, .about-container img {
     float: left;
     width: 250px;
     margin-right: 1.5em;
-    border-radius: 50%;
+    border-radius: 100%;
 }
 
 input, 
@@ -206,7 +240,7 @@ textarea {
     margin-bottom: 20px;
     padding: var(--padding-thin);
     border: 2px solid var(--border-input);
-    border-radius: 50%;
+    border-radius: 12px;
     outline: none;
     transition: border 0.2s;
 }
