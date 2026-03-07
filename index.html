@@ -5,53 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heather Ricarte-Portfolio</title>
+
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="short icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-     
+
 <body>
     <header class="page-header">
-        <div class="logo-heading">
-            <img src="images/HR_logo.png" class="logo" alt="portfolio-logo">
-            <h1 class="heading">Heather Ricarte</h1>    
-        </div> 
+        <div class="brand">
+            <img src="images/HR_logo.png" class="logo" alt="Heather Ricarte Logo">
+            <span class="brand-heading">Heather Ricarte</span>
+        </div>          
         <nav class="navigation">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+            <ul class="navigation-list">
+                <li>
+                    <a href="index.html" class="navigation-list__item navigation-list__item--active" aria-current="page">Home</a>
                 </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                <li>
+                    <a href="about.html" class="navigation-list__item">About</a>
                 </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
+                <li>
+                    <a href="contact.html" class="navigation-list__item">Contact</a>
                 </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>        
             </ul>
         </nav>
     </header>
-    
+
     <main>
-        <div class="profile-container">
-            <img src="images/profile-portrait.jpg" alt="portfolio Portrait">
-            <div id="intro">
-                <h2>Hi, there!</h2>
-                <p>I'm Heather, a web designer & developer based in the Seattle area. 
-                </p>
-                <p>Thanks for visiting my corner of the web. ❤️ 
-                </p>
-            </div>   
-        </div>
+        <section class="hero">
+            <h1>Hello! 👋🏼</h1>
+            <p class="hero-subtitle">I'm a Seattle-based web designer & developer.</p>
+            <p>I build clean, high-performance web applications.
+            <br />
+            Stay awhile and check out my recent work below.</p>
+            <br />
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">See My Work</a>
+                <a href="files/Resume-HRicarte-web.pdf" class="btn btn-secondary" target="_blank">View CV</a>
+            </div>
+        </section>
+
+        <section id="projects" class="work-section">
+            <h2>Recent Projects</h2>
+            <div class="grid">
+                <div class="grid__item">
+                    <h3>myFlix Movie App</h3>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                    </div>
+                    <p>
+                    Built a movie-enthusiast platform that allows users to curate a personal list of favorites. I focused on optimizing data fetching from the backend to ensure a seamless, "app-like" experience for the user. 
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/HeatherR206/myflixClient.git" class="btn-small">GitHub</a>
+                        <a href="https://myflixclient-five.vercel.app/login" class="btn-small btn-primary">Live Demo</a>
+                    </div>
+                </div>
+
+
+                <div class="grid__item">
+                    <h3>Mobile scheduling app</h3>
+                        <p>
+                        I was responsible for the front-end design, including wireframes and high-fidelity prototyping. Additionally, I created the HTML and CSS templates.
+                        </p>
+                    <!-- <a href="#">See project on Figma</a> -->
+                </div>
+                <div class="grid__item">    
+                    <h3>Pokédex</h3>
+                    <p>
+                    I was responsible for all front-end design and development in this project, from initial HTML code and CSS styling and subsequent iterations, to DOM manipulations, and JavaScript code with Bootstrap integration. 
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/HeatherR206/Go-PokemonGo.git">Github</a>
+                        <a href="https://heatherr206.github.io/Go-PokemonGo" class="btn-small btn-primary">Live Demo</a>
+                    </div>
+                    </div>
+
+                <div class="grid__item">
+                    <h3>Check Mate To-Do App</h3>
+                    <p>
+                    For this mini project, I utilized an existing repl and converted the vanilla JavaScript code to jQuery. I customized the CSS styling, as well.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/HeatherR206/Check-Mate.git">GitHub</a>
+                        <a href="https://heatherr206.github.io/Check-Mate" class="btn-small btn-primary">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
-<footer class="page-footer">
-    <h3 class="page-footer">Find me on</h3>
+
+    <footer class="page-footer">
+        <h3 class="footer-heading">Find me on</h3>
         <div class="social-media">
             <a href="https://github.com/HeatherR206/" target="_blank" aria-label="GitHub">
                 <img src="images/github-logo.png" width="42" height="42" alt="GitHub">
@@ -59,13 +114,10 @@
             <a href="https://www.linkedin.com/in/heather-ricarte" target="_blank" aria-label="Linkedin">
                 <img src="images/linkedin-logo.png" width="42" height="42" alt="Linkedin">
             </a>
-            <a href="https://www.instagram.com/hricarte/" target="_blank" aria-label="Instagram">
-                <img src="images/insta-logo.png" width="42" height="42" alt="Instagram">
-            </a>
         </div>
-</footer>
+    </footer>
 
-    <script src="js/tota11y.min.js"></script>
+        <script src="js/tota11y.min.js"></script>
 </body>
 
 </html>
