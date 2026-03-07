@@ -13,40 +13,38 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/style.css">
 </head>
     
 <body>
-<header class="page-header">
-    <div class="logo-heading">
-        <img src="images/HR_logo.png" class="logo" alt="Heather Ricarte Logo">
-        <h1 class="heading">Heather Ricarte</h1>
-    </div>          
-    <nav class="navigation">
-        <ul class="navigation-list">
-            <li>
-                <a href="index.html" class="navigation-list__item">Home</a>
-            </li>
-            <li>
-                <a href="work.html" class="navigation-list__item">Work</a>
-            </li>
-            <li>
-                <a href="about.html" class="navigation-list__item navigation-list__item--active" aria-current="page">About</a>
-            </li>
-            <li>
-                <a href="contact.html" class="navigation-list__item">Contact</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+    <header class="page-header">
+        <div class="brand">
+            <img src="images/HR_logo.png" class="logo" alt="Heather Ricarte Logo">
+            <span class="brand-heading">Heather Ricarte</span>
+        </div>          
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li>
+                    <a href="index.html" class="navigation-list__item">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="navigation-list__item navigation-list__item--active" aria-current="page">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <h2>A bit about me</h2>
+        <h1>About Me</h1>
         <div class="about-container">
-            <img src="images/about-portrait.png" style="width:250px;height:auto" alt="Photo-Heather-at-Yellowstone">
-            <div class="content"></div>
+        <div class="about-content">
+            <img src="images/profile-portrait.jpg" class="about-photo" alt="Heather Ricarte">
+            <div class="about-text">
                 <p>A child of the 1980s, life became more awesome with the Apple IIe—my gateway into the tech world. 
                 For years, I loved using computers to learn new things and express myself creatively. 
                 Now, I'm leveling up, leaving teaching behind for a career in software engineering!
@@ -56,12 +54,10 @@
                 typography, iconography, web design, user flow, and visual design.
                 </p>
             </div>
-        <div id="cv">
-            <a href="files/Resume-HRicarte-web.pdf" role="button" class="button btn-lg" target="_blank" download>Download my Resume</a>
-        </div>       
-    
+            <br />
+        </div>
         <div id="svg">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mt-rainier" width="800px" xmlns:xlink="http://www.w3.org/1999/xlink"
+            <svg xmlns="http://www.w3.org/2000/svg" class="mt-rainier" xmlns:xlink="http://www.w3.org/1999/xlink" alt="Mount Rainier animation"
         viewBox="0 0 1920 1082" xml:space="preserve">
     <path fill="#1F3037" opacity="1.000000" stroke="none" 
         d="
@@ -14368,13 +14364,13 @@
         C678.521179,321.910095 677.584839,317.888977 680.147949,315.009125 
         C681.489746,313.501434 685.380981,314.262634 688.512268,314.018372 
     z"/>
-        </svg>
+            </svg>
+            </div>
         </div>
-            
     </main>
 
-<footer class="page-footer">
-    <h3 class="page-footer">Find me on</h3>
+    <footer class="page-footer">
+        <h3 class="footer-heading">Find me on</h3>
         <div class="social-media">
             <a href="https://github.com/HeatherR206/" target="_blank" aria-label="GitHub">
                 <img src="images/github-logo.png" width="42" height="42" alt="GitHub">
@@ -14383,7 +14379,7 @@
                 <img src="images/linkedin-logo.png" width="42" height="42" alt="Linkedin">
             </a>
         </div>
-</footer>
+    </footer>
 
     <script src="js/tota11y.min.js"></script>
 </body>
