@@ -201,7 +201,7 @@ a {
     padding: 50px var(--padding-default);
     background-color: var(--secondary-color-lighter);
     border-radius: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 
     & h1 {
         font-size: 3.5rem;
@@ -235,11 +235,12 @@ button, .btn, .btn-submit {
     border: none;
     display: block;
     font-family: var(--font-family-body);
+    font-weight: var(--font-weight-default);
     text-align: center;
     background-color: var(--primary-color);
     color: var(--font-inverse);
     text-decoration: none;
-    width: 14em;
+    width: 12em;
     padding: var(--padding-thin);
     margin: 0 auto;
     border-radius: 50px;
@@ -255,11 +256,10 @@ button, .btn, .btn-submit {
 
 .btn-primary, .btn-secondary {
     font-size: 1.2rem;
-    margin-top: 0.8em; 
 }
 
-.btn-reset {
-    font-size: var(--font-size-small);
+.btn-reset, .btn-project {
+    font-size: var(--font-size-med);
     background-color: transparent;
     color: var(--primary-color);
     margin-top: 1em;
@@ -304,8 +304,16 @@ button, .btn, .btn-submit {
     letter-spacing: 0.5px;
 }
 
+.project-links {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+
 .work-section {
-    padding: var(--padding-thick) 0;
+    padding: var(--padding-default) 0;
 }
 
 .about-container {
@@ -317,12 +325,13 @@ button, .btn, .btn-submit {
 
 .about-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 2em;
     flex-wrap: wrap;
     text-align: left;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px var(--padding-default);
 }
 
 .about-photo {
@@ -334,6 +343,7 @@ button, .btn, .btn-submit {
 
 .about-text {
     flex: 1;
+    min-width: 300px;
 }
 
 .contact-wrapper {
@@ -369,6 +379,7 @@ button, .btn, .btn-submit {
 
 .form-group {
     flex: 1;
+    padding: 0 0 0 var(--padding-thin);
 }
 
 .label-text {
@@ -381,6 +392,7 @@ button, .btn, .btn-submit {
     color: var(--font-default);
     opacity: 0.7;
     margin-bottom: 5px;
+    padding: var(--padding-thin) 0;
     text-transform: uppercase; 
     letter-spacing: 0.5px;
     font-family: var(--font-family-body);
@@ -444,7 +456,7 @@ input:focus::placeholder {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 2em auto;
+    margin: 1em auto;
     border-radius: 12px;
 }
 
@@ -528,11 +540,23 @@ input:focus::placeholder {
 @media all and (max-width: 750px) {
     .page-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
+
+    .brand, .navigation-list {
+        margin: 8px 0;
     }
     
     h1 {
-        font-size: 22px;
+        font-size: 2rem; 
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero h1 {
+        font-size: 2.6rem;
     }
 }
 
@@ -552,6 +576,16 @@ input:focus::placeholder {
 
     .hero h1 {
         font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-content {
+        text-align: center;
+    }
+
+    .about-photo {
+        margin: 0 auto;
     }
 }
 

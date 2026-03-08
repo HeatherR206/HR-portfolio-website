@@ -54,10 +54,12 @@
                     <div class="form-group">
                         <label for="contact-fname" class="standard-label">First name</label>
                         <input type="text" id="contact-fname" name="fname" required autofocus>
+                        <span id="name-helper" class="helper-text">Required</span>
                     </div>
                     <div class="form-group">
                         <label for="contact-lname" class="standard-label">Last name</label>
                         <input type="text" id="contact-lname" name="lname" required>
+                        <span id="name-helper" class="helper-text">Required</span>
                     </div>
                 </div>  
                 
@@ -65,6 +67,7 @@
                     <div class="form-group">
                         <label for="contact-email" class="standard-label">Email</label>
                         <input type="email" id="contact-email" name="email" placeholder="name@example.com" required>
+                        <span id="email-helper" class="helper-text">Required</span>
                     </div>
                     <div class="form-group">
                         <label for="contact-tel" class="standard-label">Telephone</label>
@@ -73,19 +76,19 @@
                             pattern="\d{3}[\-]\d{3}[\-]\d{4}"
                             maxlength="12"
                             aria-describedby="tel-helper">
-                        <span id="tel-helper" class="helper-text">Format: 123-456-7890</span>
+                        <span id="tel-helper" class="helper-text">Ex: 123-456-7890</span>
                     </div>
                 </div>  
                 <div class="form-row">
                     <div class="form-group">
                         <label for="contact-message" class="standard-label">Message</label>
                         <textarea type="text" id="contact-message" name="message" placeholder="Tell me about your project..." maxlength="300" required></textarea>
-                        <span id="message-helper" class="helper-text">Max 300 characters</span>
+                        <span id="message-helper" class="helper-text">Required, max 300 characters</span>
                     </div>
                 </div>            
                 <br />
                 <br />
-                <button type="submit" class="btn-submit btn">Send message</button>
+                <button type="submit" class="btn-submit btn-primary">Send</button>
                 <button type="reset" class="btn-reset btn">Reset</button>
             </form>
         </div>
