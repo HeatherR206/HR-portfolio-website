@@ -49,7 +49,8 @@
         </div>
 
         <div id="form-container" class="contact-form-section">
-            <form method="post" id="contact-form">
+            <form id="contact-form" name="portfolio-contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="portfolio-contact" />
                 <div class="form-row">
                     <div class="form-group">
                         <label for="contact-fname" class="standard-label">First name</label>
@@ -91,6 +92,10 @@
                 <button type="submit" class="btn-submit btn-primary">Send</button>
                 <button type="reset" class="btn-reset btn">Reset</button>
             </form>
+            <div id="success-message" style="display: none; text-align: center;">
+                <h2>Thanks for your message!</h2>
+                <p>I'll be in touch soon.</p>
+            </div>
         </div>
     </div>
     </main>
@@ -108,6 +113,7 @@
     </footer>
 
     <script src="js/tota11y.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
