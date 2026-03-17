@@ -458,7 +458,7 @@ input:focus::placeholder {
     color: transparent;
 }
 
-#svg {
+.svg {
     width: 100%;
     max-width: 900px; 
     margin: 40px auto;
@@ -474,7 +474,37 @@ input:focus::placeholder {
     border-radius: 12px;
 }
 
+.mtn-paused .mtn {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.mtn-animate .mtn {
+    animation: slideUp 2s ease-out forwards, mtn 6s 2s infinite alternate linear;
+    transform-box: fill-box; 
+    transform-origin: center;
+    will-change: transform;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 @keyframes mtn { 
+    from {
+        transform: rotate(-1deg);
+    }
+    to {
+        transform: rotate(1deg);
+    }
+    
     0% {
         fill: var(--mtn-fill0);
     }
@@ -489,9 +519,6 @@ input:focus::placeholder {
     }
 }
 
-.mtn {
-    animation: 6s mtn infinite alternate linear;
-}
 
 @keyframes water-back {
     0% {
