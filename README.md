@@ -2,7 +2,7 @@
 
 A responsive, professional portfolio website designed to showcase front-end development projects and UI/UX design capabilities.
 
-**[View Live Site](https:heatherricarte-portfolio.netlify.app)**
+**[View Live Site](https://heatherricarte-portfolio.netlify.app/)**
 
 
 ## 🚀 Features
