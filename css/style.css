@@ -29,10 +29,10 @@ html {
     --font-family-heading: "Elsie Swash Caps", serif;
     --font-family-body: "Poppins", sans-serif;
 
-    --font-size-xs: 14px;
-    --font-size-small: 16px;
-    --font-size-med: 18px;
-    --font-size-default: 20px;
+    --font-size-xs: 12px;
+    --font-size-small: 14px;
+    --font-size-med: 16px;
+    --font-size-default: 18px;
     --font-weight-thin: 300;
     --font-weight-default: 400;
     --font-weight-semibold: 600;
@@ -180,12 +180,12 @@ a {
 .navigation-list__item {
     font-family: var(--font-family-body);
     font-weight: var(--font-weight-default);
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-med);
     text-decoration: none;
     color: var(--font-default);
     text-transform: uppercase; 
     letter-spacing: 0.5px;
-    padding: 5px 15px;
+    padding: 5px 10px;
     transition: color 0.3s ease;
 
 }
@@ -357,9 +357,11 @@ button, .btn, .btn-submit {
 .contact-info {
     flex: 1 1 250px;
     margin-top: 30px;
+    font-size: var(--font-size-med);
 
     a {
-        font-size: var(--font-size-med);
+        font-family: var(--font-family-body);
+        font-weight: var(--font-weight-default);
     }
 }
 
