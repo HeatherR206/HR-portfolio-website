@@ -4,10 +4,10 @@ html {
 }
 
 :root {
-    --background-color: #fffbee;
+    --background-color: #f7edfb;
     --primary-color: #7b52f4;
     --secondary-color: rgba(123, 82, 244, 0.2);
-    --accent-orange: #e7692a;
+    --accent-orange: #ff5c1c;
     --accent-purple: #4d24c9; 
     --font-default: rgba(41, 39, 39, 0.953);
     --font-inverse: #fff;
@@ -29,10 +29,10 @@ html {
     --font-family-heading: "Elsie Swash Caps", serif;
     --font-family-body: "Poppins", sans-serif;
 
-    --font-size-xs: 12px;
-    --font-size-small: 14px;
-    --font-size-med: 16px;
-    --font-size-default: 18px;
+    --font-size-xs: 14px;
+    --font-size-small: 16px;
+    --font-size-med: 18px;
+    --font-size-default: 20px;
     --font-weight-thin: 300;
     --font-weight-default: 400;
     --font-weight-semibold: 600;
@@ -128,7 +128,7 @@ h3, h4, .brand-heading {
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.6em;
 }
 
 h2, .brand-heading {
@@ -367,8 +367,8 @@ button, .btn, .btn-submit {
     flex: 2 1 400px;
     padding: 20px;
     margin-top: 30px;
-    border: 1px solid var(--border-input);
     border-radius: 12px;
+    background-color: rgba(123, 82, 244, 0.2);
 }
 
 .form-row {
